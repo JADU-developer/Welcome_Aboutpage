@@ -1,0 +1,449 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #D3D3D3;
+    /* Light grey for text */
+    background-color: #121212;
+    /* Very dark grey background */
+}
+
+header {
+    background: #1E1E1E;
+    /* Darker shade of grey */
+    color: #FFEB3B;
+    /* Yellow color */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 1rem;
+}
+
+header nav a {
+    color: #D3D3D3;
+    /* Light grey text */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #FFEB3B;
+    /* Yellow on hover */
+}
+
+.typing-effect {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    height: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #FFEB3B;
+    /* Yellow border */
+}
+
+.hero {
+    background: url('image/banner.png') no-repeat center center/cover;
+    height: 300px;
+    color: #ffffff;
+    /* Light grey text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Dark overlay for readability */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #ffffff;
+    /* Yellow for the hero title */
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.features,
+.screenshots,
+.team {
+    margin-bottom: 2rem;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features ul li {
+    background: #333333;
+    /* Dark grey background */
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #64DD17;
+    /* Lime green border */
+    color: #D3D3D3;
+    /* Light grey text */
+}
+
+.screenshots {
+    overflow-x: auto; /* Add horizontal scrollbar */
+    white-space: nowrap; /* Prevent images from wrapping */
+    padding-bottom: 20px; /* Add space for scrollbar */
+    padding-top: 40px; /* Add space for title */
+}
+
+.screenshots-title {
+    position: sticky; /* Keep title sticky */
+    top: 0; /* Stick title to top */
+    background-color: #121212; /* Match background color */
+    padding: 10px; /* Add padding */
+    z-index: 1; /* Ensure title is on top */
+}
+
+.screenshots img {
+    width: 300px; /* Set fixed width for images */
+    margin: 10px; /* Adjust margin */
+    display: inline-block; /* Display images inline */
+    vertical-align: top; /* Align images to top */
+}
+
+/* Custom scrollbar styles */
+.screenshots::-webkit-scrollbar {
+    height: 8px; /* Set scrollbar height */
+    background-color: #1E1E1E; /* Set scrollbar background color */
+}
+
+.screenshots::-webkit-scrollbar-thumb {
+    background-color: #FFEB3B; /* Set scrollbar thumb color */
+    border-radius: 10px; /* Add rounded corners to scrollbar thumb */
+}
+
+.screenshots::-webkit-scrollbar-thumb:hover {
+    background-color: #d6ff43; /* Set scrollbar thumb hover color */
+}
+
+/* For Firefox */
+.screenshots {
+    scrollbar-width: thin; /* Set scrollbar width */
+    scrollbar-color: #FFEB3B #1E1E1E; /* Set scrollbar colors */
+}
+
+
+
+
+.call-to-action {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.call-to-action a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    /* Dark background color for buttons */
+    background: #1E3A8A;
+    /* Dark blue */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.call-to-action a:hover {
+    color: #121212;
+    background: #FFEB3B;
+    /* Yellow on hover */
+}
+
+footer {
+    background: #121212;
+    /* Very dark grey for footer */
+    color: #D3D3D3;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #D3D3D3;
+    /* Light grey for footer links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFEB3B;
+    /* Yellow on hover */
+}
+
+#credits {
+    background-color: #1E1E1E;
+    /* Dark grey background for the credits section */
+    color: #D3D3D3;
+    /* Light grey text color */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+#credits h2 {
+    color: #FFEB3B;
+    /* Yellow for heading */
+}
+
+#credits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#credits ul li {
+    background: #333333;
+    /* Dark grey background for each credit item */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #64DD17;
+    /* Lime green border */
+}
+
+#credits ul li a {
+    color: #FFEB3B;
+    /* Yellow for the website links */
+    text-decoration: none;
+}
+
+#credits ul li a:hover {
+    color: #64DD17;
+    /* Lime green on hover */
+}
+
+#download {
+    background-color: #1E1E1E;
+    /* Dark grey background */
+    color: #D3D3D3;
+    /* Light grey text */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#download h2 {
+    color: #FFEB3B;
+    /* Yellow heading color */
+}
+
+#download form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#download label {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+#download input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #FFEB3B;
+    /* Yellow border for inputs */
+    border-radius: 4px;
+    background-color: #333333;
+    /* Dark input background */
+    color: #D3D3D3;
+    width: 250px;
+}
+
+#download button {
+    background-color: #64DD17;
+    /* Lime green button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+#download button:hover {
+    background-color: #FFEB3B;
+    /* Yellow button hover effect */
+}
+
+#download p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+#download a {
+    color: #faf617;
+    text-decoration: none;
+}
+
+#download a:hover {
+    color: #64DD17;
+    /* Lime green on hover */
+}
+
+.download-platform {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.download-platform p {
+    color: #D3D3D3;
+    /* Light grey text */
+    margin-bottom: 10px;
+}
+
+.platform-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #1E1E1E;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.platform-btn:hover {
+    background-color: #FFEB3B;
+    /* Yellow hover effect */
+}
+
+.itch-btn {
+    background-color: #eb0000;
+    /* Itch.io orange */
+}
+
+.itch-btn:hover {
+    background-color: #ff4e4e;
+    /* Lighter orange on hover */
+}
+
+.steam-btn {
+    background-color: #171A21;
+    /* Steam dark blue */
+}
+
+.steam-btn:hover {
+    background-color: #3A3F47;
+    /* Lighter dark blue on hover */
+}
+
+
+.feedback-btn {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: #6f3bff;
+    /* Yellow button */
+    color: #ffffff;
+    /* Dark text */
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.feedback-btn:hover {
+    background-color: #d6ff43;
+    /* Light grey hover */
+    color: #070707;
+    /* Dark text */
+}
+
+
+/* Play Testers Section */
+.play-testers {
+    background-color: #1E1E1E;
+    color: #D3D3D3;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    /* Make it full width like Credits section */
+}
+
+/* Container for two testers per row */
+.tester-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    /* Matches the Credits section width */
+    margin: 0 auto;
+    /* Centers it properly */
+}
+
+/* Individual Tester Box */
+.tester {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: #333333;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    transition: background 0.3s ease-in-out;
+    margin-bottom: 20px;
+    /* Adds spacing between testers */
+}
+
+
+/* Hover effect */
+.tester:hover {
+    background: #444444;
+}
+
+/* Profile Picture */
+.tester img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Tester Info */
+.tester-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.tester-info h3 {
+    margin: 0;
+    color: #FFEB3B;
+    font-size: 18px;
+}
+
+.tester-info a {
+    color: #64DD17;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.tester-info a:hover {
+    color: #FFEB3B;
+}
+
+/* Responsive Design: Stack on small screens */
+@media (max-width: 700px) {
+    .tester-wrapper {
+        flex-direction: column;
+    }
+}
